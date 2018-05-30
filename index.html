@@ -1,0 +1,111 @@
+<html>
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
+        <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.1/css/bootstrap.min.css" integrity="sha384-WskhaSGFgHYWDcbwN70/dfYBj47jz9qbsMId/iRN3ewGhXQFZCSftd1LZCfmhktB" crossorigin="anonymous">
+        <link rel="stylesheet" href="./css/style.css" />
+        <title>Meu fórum</title>
+    </head>
+    <body>
+    <nav style="background-color: #FFC259" class="navbar navbar-expand-md navbar-light shadow-sm">
+        <a class="navbar-brand" href="#">Meu fórum</a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
+            <div class="navbar-nav mr-auto">
+                <a class="nav-item nav-link" href="./dashboard.html">Home</a>
+                <a class="nav-item nav-link active" href="./index.html">Signup</a>
+            </div>
+            <form class="form-inline my-2 my-lg-0">
+                <input class="form-control mr-sm-2" type="search" placeholder="Search" aria-label="Search">
+                <button class="btn btn-custom-secondary my-2 my-sm-0" type="submit">Search</button>
+            </form>
+        </div>
+    </nav>
+        <div style="margin-top: 20px; margin-bottom: 20px; max-width: 480px;" class="container">
+            <div class="row">
+                <div class="col-sm">
+                    <div class="card shadow-sm ">
+                        <h5 style="background-color: #D8E8FF" class="card-header ">Signup</h5>
+                        <div class="card-body">
+                            <!-- informações: -->
+                            <!-- nome*, senha*, email*, interesses (tipo tags)  -->
+                            <form>
+                                <div class="user-avatar-upload">
+                                    <div class="user-avatar-image rounded-circle"></div>
+                                    <span class="add-photo"><img src="./img/upload_photo.png" class="upload-icon"/><span style="vertical-align: middle">Upload photo</span></span>
+                                </div>
+                                <!-- <img width="80" height="80" src="./img/user_default.png" class="rounded-circle" /> -->
+                                <div class="row">
+                                    <div class="col-sm-12">
+                                        <div class="form-group">
+                                            <label for="name">Full Name</label>
+                                            <input type="text" class="form-control" id="name" placeholder="Enter your Full Name">
+                                        </div>
+                                        <div class="form-group">
+                                            <label for="username">Username</label>
+                                            <input type="text" class="form-control" id="username" placeholder="Enter your Username">
+                                        </div>
+                                        <div class="form-group">
+                                            <label for="email">Email</label>
+                                            <input type="email" class="form-control" id="email" placeholder="Enter your Email">
+                                        </div>
+                                        <div class="form-group">
+                                            <label for="password">Password</label>
+                                            <input type="password" class="form-control" id="password" placeholder="Enter your Password">
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="row">
+                                    <div class="col-sm-12">
+                                        <label>List of tags</label>
+                                        <div class="form-group">   
+                                            <div class="card ">
+                                                <div class="card-body">
+                                                    <div class="tag-container">
+                                                        <span class="tag-item">
+                                                            <span class="tag">javascript<span class="action-tag add-tag" title="add this tag">+</span></span>
+                                                        </span>
+                                                        <span class="tag-item">
+                                                            <span class="tag">rails<span class="action-tag add-tag" title="add this tag">+</span></span>
+                                                        </span>
+                                                        <span class="tag-item">
+                                                            <span class="tag">react<span class="action-tag add-tag" title="add this tag">+</span></span>
+                                                        </span>
+                                                        <span class="tag-item">
+                                                            <span class="tag">ruby<span class="action-tag add-tag" title="add this tag">+</span></span>
+                                                        </span>
+                                                        <span class="tag-item">
+                                                            <span class="tag">datascience<span class="action-tag add-tag" title="add this tag">+</span></span>
+                                                        </span>
+                                                    </div>
+                                                </div>
+                                            </div>     
+                                        </div>
+                                        <label>Selected tags</label>
+                                        <div class="form-group">   
+                                            <div class="card ">
+                                                <div class="card-body">
+                                                    <div class="tag-container">
+                                                        <span class="tag-item">
+                                                            <span class="tag">php<span class="action-tag remove-tag" title="remove this tag">-</span></span>
+                                                        </span>
+                                                    </div>
+                                                </div>
+                                            </div>     
+                                        </div>
+                                    </div>
+                                </div>
+                                <button type="submit" class="btn btn-custom-primary">Submit</button>
+                            </form>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49" crossorigin="anonymous"></script>
+        <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.1/js/bootstrap.min.js" integrity="sha384-smHYKdLADwkXOn1EmN1qk/HfnUcbVRZyYmZ4qpPea6sjB/pTJ0euyQp0Mk8ck+5T" crossorigin="anonymous"></script>
+    </body>
+</html>

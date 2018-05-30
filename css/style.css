@@ -1,0 +1,94 @@
+/* my custom css */
+
+*{
+    cursor: default;
+}
+
+body{
+    background-color: #F7F7F7;
+}
+
+.tag-container{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: flex-start;
+}
+
+.tag-item{
+    margin: 5px;
+}
+
+.tag{
+    display: flex;
+    padding: 2px;    
+    color: #67869c;
+    background-color: #D8E8FF;
+    border-color: transparent;
+    text-align: center;
+    border-style: solid;
+    border-radius: 0;
+    line-height: 1em;
+    vertical-align: middle;
+}
+
+.tag:hover{
+    background-color: rgb(206, 226, 240);
+}
+
+.action-tag{
+    font-size: 1.1em;
+    font-weight: 800;
+    margin-left: 2px;
+    cursor: pointer;
+}
+
+.add-tag:hover{
+    color: rgb(90, 212, 60);
+}
+
+.remove-tag:hover{
+    color: rgb(221, 51, 51);
+}
+
+/* user avatar upload */
+.user-avatar-image{
+    background-image: url("../img/user_default.png");
+    background-size: contain;
+    background-repeat: no-repeat;
+    display: block;
+    width: 120px;
+    height: 120px;
+}
+
+.user-avatar-upload{
+    width: 120px;
+    margin: 0 auto;
+    text-align: center;
+}
+
+.add-photo{
+    margin-top: 5px;
+    display: inline-block;
+    font-size: .8em;
+    font-weight: 500;
+    text-align: center;
+    line-height: 1em;
+    vertical-align: middle;
+}
+
+.upload-icon{
+    cursor: pointer;
+    margin-right: 5px;
+    width: 24px;
+    height: 24px;
+}
+
+/* btns */
+
+.btn-custom-secondary{
+    background-color: #F7F7F7;
+}
+.btn-custom-primary{
+    color: white;
+    background-color: #FF921B;
+}
