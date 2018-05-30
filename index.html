@@ -7,22 +7,22 @@
         <title>Meu fórum</title>
     </head>
     <body>
-    <nav style="background-color: #FFC259" class="navbar navbar-expand-md navbar-light shadow-sm">
-        <a class="navbar-brand" href="#">Meu fórum</a>
-        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
-        <span class="navbar-toggler-icon"></span>
-        </button>
-        <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
-            <div class="navbar-nav mr-auto">
-                <a class="nav-item nav-link" href="./dashboard.html">Home</a>
-                <a class="nav-item nav-link active" href="./index.html">Signup</a>
+        <nav style="background-color: #FFC259" class="navbar navbar-expand-md navbar-light shadow-sm">
+            <a class="navbar-brand" href="#">Meu fórum</a>
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
+                <div class="navbar-nav mr-auto">
+                    <a class="nav-item nav-link" href="./dashboard.html">Home</a>
+                    <a class="nav-item nav-link active" href="./index.html">Signup</a>
+                </div>
+                <form class="form-inline my-2 my-lg-0">
+                    <input class="form-control mr-sm-2" type="search" placeholder="Search" aria-label="Search">
+                    <button class="btn btn-custom-secondary" type="submit">Search</button>
+                </form>
             </div>
-            <form class="form-inline my-2 my-lg-0">
-                <input class="form-control mr-sm-2" type="search" placeholder="Search" aria-label="Search">
-                <button class="btn btn-custom-secondary my-2 my-sm-0" type="submit">Search</button>
-            </form>
-        </div>
-    </nav>
+        </nav>
         <div style="margin-top: 20px; margin-bottom: 20px; max-width: 480px;" class="container">
             <div class="row">
                 <div class="col-sm">
@@ -61,39 +61,21 @@
                                     <div class="col-sm-12">
                                         <label>List of tags</label>
                                         <div class="form-group">   
-                                            <div class="card ">
-                                                <div class="card-body">
-                                                    <div class="tag-container">
-                                                        <span class="tag-item">
-                                                            <span class="tag">javascript<span class="action-tag add-tag" title="add this tag">+</span></span>
-                                                        </span>
-                                                        <span class="tag-item">
-                                                            <span class="tag">rails<span class="action-tag add-tag" title="add this tag">+</span></span>
-                                                        </span>
-                                                        <span class="tag-item">
-                                                            <span class="tag">react<span class="action-tag add-tag" title="add this tag">+</span></span>
-                                                        </span>
-                                                        <span class="tag-item">
-                                                            <span class="tag">ruby<span class="action-tag add-tag" title="add this tag">+</span></span>
-                                                        </span>
-                                                        <span class="tag-item">
-                                                            <span class="tag">datascience<span class="action-tag add-tag" title="add this tag">+</span></span>
-                                                        </span>
-                                                    </div>
+                                            <div class="row">
+                                                <div class="col-sm-10">
+                                                    <input name="tagFilter" class="form-control mr-sm-2" type="search" onkeyup="filter()" placeholder="Procurar"/>
                                                 </div>
-                                            </div>     
-                                        </div>
+                                            </div>
+                                            <div id="tags" class="tag-container">
+                                            </div>
+                                        </div>     
                                         <label>Selected tags</label>
                                         <div class="form-group">   
-                                            <div class="card ">
-                                                <div class="card-body">
-                                                    <div class="tag-container">
-                                                        <span class="tag-item">
-                                                            <span class="tag">php<span class="action-tag remove-tag" title="remove this tag">-</span></span>
-                                                        </span>
-                                                    </div>
-                                                </div>
-                                            </div>     
+                                            <div class="tag-container">
+                                                <span class="tag-item">
+                                                    <span class="tag">php<span class="action-tag remove-tag" title="remove this tag">-</span></span>
+                                                </span>
+                                            </div>
                                         </div>
                                     </div>
                                 </div>
@@ -107,5 +89,20 @@
         <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
         <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49" crossorigin="anonymous"></script>
         <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.1/js/bootstrap.min.js" integrity="sha384-smHYKdLADwkXOn1EmN1qk/HfnUcbVRZyYmZ4qpPea6sjB/pTJ0euyQp0Mk8ck+5T" crossorigin="anonymous"></script>
+        <script>
+            const filter = (e) => {
+                let items = new Array('ruby', 'rails', 'html', 'c++', 'c', 'c#', 'php', 'java', 'javascript', 'react');
+                let value = document.getElementsByName('tagFilter')[0].value;
+                let tagContainer = document.getElementById("tags");
+                const itemsFiltered = items.filter(item => {
+                    return item.startsWith(value) && value !== ""; 
+                });
+                let html = "";
+                itemsFiltered.map(item => {
+                    html += `<span class='tag-item'><span class='tag'>${item}<span class='action-tag add-tag' title='add this tag'>+</span></span></span>`;
+                });
+                tagContainer.innerHTML = html.toString();
+            }
+        </script>
     </body>
 </html>
