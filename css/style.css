@@ -24,9 +24,9 @@ body{
     color: #67869c;
     background-color: #D8E8FF;
     border-color: transparent;
+    border-radius: 5px;
     text-align: center;
     border-style: solid;
-    border-radius: 0;
     line-height: 1em;
     vertical-align: middle;
 }

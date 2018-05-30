@@ -13,13 +13,9 @@
             <span class="navbar-toggler-icon"></span>
             </button>
             <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
-                <div class="navbar-nav mr-auto">
-                    <a class="nav-item nav-link" href="./dashboard.html">Home</a>
-                    <a class="nav-item nav-link active" href="./index.html">Signup</a>
-                </div>
+                <div class="navbar-nav mr-auto"></div>
                 <form class="form-inline my-2 my-lg-0">
-                    <input class="form-control mr-sm-2" type="search" placeholder="Search" aria-label="Search">
-                    <button class="btn btn-custom-secondary" type="submit">Search</button>
+                    <input class="form-control mr-sm-2" type="search" placeholder="Pesquisar" aria-label="Search">
                 </form>
             </div>
         </nav>
@@ -27,59 +23,60 @@
             <div class="row">
                 <div class="col-sm">
                     <div class="card shadow-sm ">
-                        <h5 style="background-color: #D8E8FF" class="card-header ">Signup</h5>
+                        <h5 style="background-color: #D8E8FF" class="card-header ">Cadastrar</h5>
                         <div class="card-body">
                             <!-- informações: -->
                             <!-- nome*, senha*, email*, interesses (tipo tags)  -->
                             <form>
                                 <div class="user-avatar-upload">
                                     <div class="user-avatar-image rounded-circle"></div>
-                                    <span class="add-photo"><img src="./img/upload_photo.png" class="upload-icon"/><span style="vertical-align: middle">Upload photo</span></span>
+                                    <span class="add-photo"><img src="./img/upload_photo.png" class="upload-icon"/><span style="vertical-align: middle">Enviar arquivo</span></span>
                                 </div>
                                 <!-- <img width="80" height="80" src="./img/user_default.png" class="rounded-circle" /> -->
                                 <div class="row">
                                     <div class="col-sm-12">
                                         <div class="form-group">
-                                            <label for="name">Full Name</label>
-                                            <input type="text" class="form-control" id="name" placeholder="Enter your Full Name">
+                                            <label for="name">Nome completo</label>
+                                            <input type="text" class="form-control" id="name" placeholder="Digite seu nome completo">
                                         </div>
                                         <div class="form-group">
-                                            <label for="username">Username</label>
-                                            <input type="text" class="form-control" id="username" placeholder="Enter your Username">
+                                            <label for="username">Nome de usuário</label>
+                                            <input type="text" class="form-control" id="username" placeholder="Digite seu nome de usuário">
                                         </div>
                                         <div class="form-group">
                                             <label for="email">Email</label>
-                                            <input type="email" class="form-control" id="email" placeholder="Enter your Email">
+                                            <input type="email" class="form-control" id="email" placeholder="Digite seu email">
                                         </div>
                                         <div class="form-group">
-                                            <label for="password">Password</label>
-                                            <input type="password" class="form-control" id="password" placeholder="Enter your Password">
+                                            <label for="password">Senha</label>
+                                            <input type="password" class="form-control" id="password" placeholder="Digite sua senha">
                                         </div>
                                     </div>
                                 </div>
+                                <hr style="margin: 15px 0 30px 0"/>
                                 <div class="row">
                                     <div class="col-sm-12">
-                                        <label>List of tags</label>
                                         <div class="form-group">   
                                             <div class="row">
                                                 <div class="col-sm-10">
-                                                    <input name="tagFilter" class="form-control mr-sm-2" type="search" onkeyup="filter()" placeholder="Procurar"/>
+                                                    <label for="tagFilter">Seus interesses</label>
+                                                    <input name="tagFilter" class="form-control mr-sm-2" type="search" onkeyup="filter()" placeholder="Digite aqui"/>
                                                 </div>
                                             </div>
                                             <div id="tags" class="tag-container">
                                             </div>
                                         </div>     
-                                        <label>Selected tags</label>
                                         <div class="form-group">   
+                                            <label>Selecionados</label>
                                             <div class="tag-container">
                                                 <span class="tag-item">
-                                                    <span class="tag">php<span class="action-tag remove-tag" title="remove this tag">-</span></span>
+                                                    <span class="tag">php<span class="action-tag remove-tag" title="remover">-</span></span>
                                                 </span>
                                             </div>
                                         </div>
                                     </div>
                                 </div>
-                                <button type="submit" class="btn btn-custom-primary">Submit</button>
+                                <button type="submit" class="btn btn-custom-primary">Enviar</button>
                             </form>
                         </div>
                     </div>
@@ -99,7 +96,7 @@
                 });
                 let html = "";
                 itemsFiltered.map(item => {
-                    html += `<span class='tag-item'><span class='tag'>${item}<span class='action-tag add-tag' title='add this tag'>+</span></span></span>`;
+                    html += `<span class='tag-item'><span class='tag'>${item}<span class='action-tag add-tag' title='adicionar'>+</span></span></span>`;
                 });
                 tagContainer.innerHTML = html.toString();
             }
