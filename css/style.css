@@ -3,13 +3,31 @@
 *{
     cursor: default;
 }
-
+.clickabe{
+    cursor: pointer;
+}
 input{
     cursor: text;
 }
-
+.dashboard-post-icon{
+    margin: 6px;
+    color: gray;
+}
+.post-actions{
+    margin-top: 10px;
+    margin-bottom: 10px;
+}
 body{
     background-color: #F7F7F7;
+}
+
+.short-text-link{
+    color: black;
+    font-weight: bold;
+}
+
+textarea {
+    resize: none;
 }
 
 .tag-container{
@@ -88,6 +106,7 @@ body{
 }
 
 .upload-icon{
+    color: gray;
     cursor: pointer;
     margin-right: 5px;
     width: 24px;
@@ -101,4 +120,11 @@ body{
 .btn-custom-primary{
     color: white;
     background-color: #FF921B;
+}
+
+/* fonts */
+.post-date{
+    font-style: italic;
+    font-size: .8em;
+    font-weight: 500;
 }

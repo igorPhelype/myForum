@@ -2,6 +2,7 @@
     <head>
         <meta charset="UTF-8">
         <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
+        <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.0.13/css/all.css" integrity="sha384-DNOHZ68U8hZfKXOrtjWvjxusGo9WQnrNx2sqG0tfsghAvtVlRW3tvkXWZh58N9jp" crossorigin="anonymous">
         <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.1/css/bootstrap.min.css" integrity="sha384-WskhaSGFgHYWDcbwN70/dfYBj47jz9qbsMId/iRN3ewGhXQFZCSftd1LZCfmhktB" crossorigin="anonymous">
         <link rel="stylesheet" href="./css/style.css" />
         <title>Meu fórum</title>
@@ -24,9 +25,9 @@
             <a class="nav-link" href="#">Favoritos</a>
             <a class="nav-link" href="#">Interesses</a>
         </nav>
-        <div style="margin-top: 40px; margin-bottom: 40px;" class="container-fluid">
+        <div style="margin-top: 20px; margin-bottom: 20px;" class="container-fluid">
             <div class="row">
-                <div class="col-sm-4">
+                <div style="margin-bottom: 20px;" class="col-sm-4">
                     <div class="card shadow-sm">
                         <div class="card-body">
                             <div class="row">
@@ -38,22 +39,27 @@
                                 <div class="col-sm-12">         
                                     <h5 class="card-text">Igor Phelype Guimarães</h5>
                                     <p class="card-text">Developer at Lorem Ipsum, likes php and other stuff</p>
-                                    <hr/>                                    
+                                    <hr/>               
                                     <label>Interesses</label>
                                     <div class="tag-container">
                                         <span class="tag-item">
-                                            <span class="tag">php</span>
+                                            <span class="tag clickabe">php</span>
                                         </span>
                                         <span class="tag-item">
-                                            <span class="tag">javascript</span>
+                                            <span class="tag clickabe">javascript</span>
                                         </span>
                                         <span class="tag-item">
-                                            <span class="tag">react</span>
+                                            <span class="tag clickabe">react</span>
                                         </span>
                                         <span class="tag-item">
-                                            <span class="tag">ruby</span>
+                                            <span class="tag clickabe">ruby</span>
                                         </span>
                                     </div>
+                                </div>
+                            </div>
+                            <div style="margin-top: 15px;"class="row">                            
+                                <div class="col-sm-12" style="text-align: center" >
+                                    <button type="button" class="btn btn-custom-primary">Editar Perfil</button>
                                 </div>
                             </div>
                         </div>
@@ -63,32 +69,38 @@
                     <div class="card shadow-sm">
                         <div class="card-body">
                             <div class="row">
-                                <div class="col-sm-6">
+                                <div class="col-8">
                                     <h5 class="card-text">
                                         Lorem, ipsum dolor sit amet.
                                     </h5>
                                 </div>
-                                <div style="text-align: right;"class="col-sm-6">
-                                    <span class="card-text">0 respostas</span>
+                                <div style="vertical-align: top; text-align: right" class="col">    
+                                    <span><i title="favoritar" style="color: #FFD83D" class="fas fa-star fa-lg clickabe dashboard-post-icon"></i></span>
+                                </div>
+                            </div>
+                            <div class="row">
+                                <div class="col-sm-12 post-actions">
+                                    <span class="card-text"><i class="fas fa-comments dashboard-post-icon fa-lg"></i>2 comentários</span>
+                                    <span class="card-text"><i class="fas fa-eye dashboard-post-icon fa-lg"></i>50 visualizações</span>
+                                </div>
+                            </div>
+                            <div style="margin-top: 15px;"class="row">
+                                <div class="col-sm-12">
+                                    <p class="card-text">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Id, recusandae at obcaecati repudiandae error, ex voluptatem in labore, dignissimos<a class="short-text-link clickabe" href="#">...</a></p>
                                 </div>
                             </div>
                             <div class="row">
                                 <div class="col-sm-6">                                
                                     <div class="tag-container">
                                         <span class="tag-item">
-                                            <span class="tag">php</span>
+                                            <span class="tag clickabe">php</span>
                                         </span>
                                     </div>
                                 </div>
                             </div>
-                            <div class="row">
-                                <div class="col-sm-12">
-                                    <p class="card-text">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Id, recusandae at obcaecati repudiandae error, ex voluptatem in labore, dignissimos commodi est aspernatur repellendus. Ab earum corporis architecto officiis quaerat error.</p>
-                                </div>
-                            </div>
                             <div style="text-align: right;" class="row">
                                 <div class="col-sm-12">
-                                    <p class="card-text">01/07/2018</p>
+                                    <p class="card-text post-date">3 hours ago</p>
                                 </div>
                             </div>
                         </div>
