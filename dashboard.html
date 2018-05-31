@@ -7,7 +7,7 @@
         <title>Meu fórum</title>
     </head>
     <body>
-        <nav style="background-color: #FFC259" class="navbar navbar-expand-md navbar-light shadow-sm">
+        <nav style="background-color: #FFC259" class="navbar navbar-expand-md navbar-light">
             <a class="navbar-brand" href="#">Meu fórum</a>
             <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
             <span class="navbar-toggler-icon"></span>
@@ -19,19 +19,82 @@
                 </form>
             </div>
         </nav>
-        <ul class="nav justify-content-center">
-            <li class="nav-item">
-                <a class="nav-link active" href="#">Home</a>
-            </li>
-            <li class="nav-item">
-                <a class="nav-link" href="#">Favoritos</a>
-            </li>
-            <li class="nav-item">
-                <a class="nav-link" href="#">Interesses</a>
-            </li>
-        </ul>
-        <div style="margin-top: 20px; margin-bottom: 20px; max-width: 480px;" class="container">
-            
+        <nav style="background-color: #F7F7F7" class="nav shadow-sm justify-content-center">
+            <a class="nav-link" href="#">Home</a>
+            <a class="nav-link" href="#">Favoritos</a>
+            <a class="nav-link" href="#">Interesses</a>
+        </nav>
+        <div style="margin-top: 40px; margin-bottom: 40px;" class="container-fluid">
+            <div class="row">
+                <div class="col-sm-4">
+                    <div class="card shadow-sm">
+                        <div class="card-body">
+                            <div class="row">
+                                <div class="col-sm-12">
+                                    <img src="./img/profile_pic.jpg" class="user-avatar rounded-circle"/>
+                                </div>
+                            </div>
+                            <div style="margin-top: 15px;"class="row">                            
+                                <div class="col-sm-12">         
+                                    <h5 class="card-text">Igor Phelype Guimarães</h5>
+                                    <p class="card-text">Developer at Lorem Ipsum, likes php and other stuff</p>
+                                    <hr/>                                    
+                                    <label>Interesses</label>
+                                    <div class="tag-container">
+                                        <span class="tag-item">
+                                            <span class="tag">php</span>
+                                        </span>
+                                        <span class="tag-item">
+                                            <span class="tag">javascript</span>
+                                        </span>
+                                        <span class="tag-item">
+                                            <span class="tag">react</span>
+                                        </span>
+                                        <span class="tag-item">
+                                            <span class="tag">ruby</span>
+                                        </span>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-sm-8">
+                    <div class="card shadow-sm">
+                        <div class="card-body">
+                            <div class="row">
+                                <div class="col-sm-6">
+                                    <h5 class="card-text">
+                                        Lorem, ipsum dolor sit amet.
+                                    </h5>
+                                </div>
+                                <div style="text-align: right;"class="col-sm-6">
+                                    <span class="card-text">0 respostas</span>
+                                </div>
+                            </div>
+                            <div class="row">
+                                <div class="col-sm-6">                                
+                                    <div class="tag-container">
+                                        <span class="tag-item">
+                                            <span class="tag">php</span>
+                                        </span>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="row">
+                                <div class="col-sm-12">
+                                    <p class="card-text">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Id, recusandae at obcaecati repudiandae error, ex voluptatem in labore, dignissimos commodi est aspernatur repellendus. Ab earum corporis architecto officiis quaerat error.</p>
+                                </div>
+                            </div>
+                            <div style="text-align: right;" class="row">
+                                <div class="col-sm-12">
+                                    <p class="card-text">01/07/2018</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
         </div>
         <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
         <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49" crossorigin="anonymous"></script>

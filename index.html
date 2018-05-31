@@ -19,67 +19,63 @@
                 </form>
             </div>
         </nav>
-        <div style="margin-top: 20px; margin-bottom: 20px; max-width: 480px;" class="container">
-            <div class="row">
-                <div class="col-sm">
-                    <div class="card shadow-sm ">
-                        <h5 style="background-color: #D8E8FF" class="card-header ">Cadastrar</h5>
-                        <div class="card-body">
-                            <!-- informações: -->
-                            <!-- nome*, senha*, email*, interesses (tipo tags)  -->
-                            <form>
-                                <div class="user-avatar-upload">
-                                    <div class="user-avatar-image rounded-circle"></div>
-                                    <span class="add-photo"><img src="./img/upload_photo.png" class="upload-icon"/><span style="vertical-align: middle">Enviar arquivo</span></span>
-                                </div>
-                                <!-- <img width="80" height="80" src="./img/user_default.png" class="rounded-circle" /> -->
-                                <div class="row">
-                                    <div class="col-sm-12">
-                                        <div class="form-group">
-                                            <label for="name">Nome completo</label>
-                                            <input type="text" class="form-control" id="name" placeholder="Digite seu nome completo">
-                                        </div>
-                                        <div class="form-group">
-                                            <label for="username">Nome de usuário</label>
-                                            <input type="text" class="form-control" id="username" placeholder="Digite seu nome de usuário">
-                                        </div>
-                                        <div class="form-group">
-                                            <label for="email">Email</label>
-                                            <input type="email" class="form-control" id="email" placeholder="Digite seu email">
-                                        </div>
-                                        <div class="form-group">
-                                            <label for="password">Senha</label>
-                                            <input type="password" class="form-control" id="password" placeholder="Digite sua senha">
-                                        </div>
-                                    </div>
-                                </div>
-                                <hr style="margin: 15px 0 30px 0"/>
-                                <div class="row">
-                                    <div class="col-sm-12">
-                                        <div class="form-group">   
-                                            <div class="row">
-                                                <div class="col-sm-10">
-                                                    <label for="tagFilter">Seus interesses</label>
-                                                    <input name="tagFilter" class="form-control mr-sm-2" type="search" onkeyup="filter()" placeholder="Digite aqui"/>
-                                                </div>
-                                            </div>
-                                            <div id="tags" class="tag-container">
-                                            </div>
-                                        </div>     
-                                        <div class="form-group">   
-                                            <label>Selecionados</label>
-                                            <div class="tag-container">
-                                                <span class="tag-item">
-                                                    <span class="tag">php<span class="action-tag remove-tag" title="remover">-</span></span>
-                                                </span>
-                                            </div>
-                                        </div>
-                                    </div>
-                                </div>
-                                <button type="submit" class="btn btn-custom-primary">Enviar</button>
-                            </form>
+        <div style="margin-top: 40px; margin-bottom: 40px; max-width: 480px;" class="container">
+            <div class="card shadow-sm ">
+                <h5 style="background-color: #D8E8FF" class="card-header ">Cadastrar</h5>
+                <div class="card-body">
+                    <!-- informações: -->
+                    <!-- nome*, senha*, email*, interesses (tipo tags)  -->
+                    <form>
+                        <div class="user-avatar-upload">
+                            <div class="user-avatar-image rounded-circle"></div>
+                            <span class="add-photo"><img src="./img/upload_photo.png" class="upload-icon"/><span style="vertical-align: middle">Enviar arquivo</span></span>
                         </div>
-                    </div>
+                        <!-- <img width="80" height="80" src="./img/user_default.png" class="rounded-circle" /> -->
+                        <div class="row">
+                            <div class="col-sm-12">
+                                <div class="form-group">
+                                    <label for="name">Nome completo</label>
+                                    <input type="text" class="form-control" id="name" placeholder="Digite seu nome completo">
+                                </div>
+                                <div class="form-group">
+                                    <label for="username">Nome de usuário</label>
+                                    <input type="text" class="form-control" id="username" placeholder="Digite seu nome de usuário">
+                                </div>
+                                <div class="form-group">
+                                    <label for="email">Email</label>
+                                    <input type="email" class="form-control" id="email" placeholder="Digite seu email">
+                                </div>
+                                <div class="form-group">
+                                    <label for="password">Senha</label>
+                                    <input type="password" class="form-control" id="password" placeholder="Digite sua senha">
+                                </div>
+                            </div>
+                        </div>
+                        <hr style="margin: 15px 0 30px 0"/>
+                        <div class="row">
+                            <div class="col-sm-12">
+                                <div class="form-group">   
+                                    <div class="row">
+                                        <div class="col-sm-10">
+                                            <label for="tagFilter">Seus interesses</label>
+                                            <input name="tagFilter" class="form-control mr-sm-2" type="search" onkeyup="filter()" placeholder="Digite aqui"/>
+                                        </div>
+                                    </div>
+                                    <div id="tags" class="tag-container">
+                                    </div>
+                                </div>     
+                                <div class="form-group">   
+                                    <label>Selecionados</label>
+                                    <div class="tag-container">
+                                        <span class="tag-item">
+                                            <span class="tag">php<span class="action-tag remove-tag" title="remover">-</span></span>
+                                        </span>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <button type="button" onclick="formValidator()" class="btn btn-custom-primary">Enviar</button>
+                    </form>
                 </div>
             </div>
         </div>
@@ -87,6 +83,9 @@
         <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49" crossorigin="anonymous"></script>
         <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.1/js/bootstrap.min.js" integrity="sha384-smHYKdLADwkXOn1EmN1qk/HfnUcbVRZyYmZ4qpPea6sjB/pTJ0euyQp0Mk8ck+5T" crossorigin="anonymous"></script>
         <script>
+            const formValidator = () => {
+                window.location = "dashboard.html";
+            }
             const filter = (e) => {
                 let items = new Array('ruby', 'rails', 'html', 'c++', 'c', 'c#', 'java', 'javascript', 'react');
                 let value = document.getElementsByName('tagFilter')[0].value;

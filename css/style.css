@@ -4,6 +4,10 @@
     cursor: default;
 }
 
+input{
+    cursor: text;
+}
+
 body{
     background-color: #F7F7F7;
 }
@@ -66,6 +70,13 @@ body{
     text-align: center;
 }
 
+.user-avatar{
+    display: block;
+    margin: 0 auto;
+    width: 150px;
+    border: 1px solid #F7F7F7;
+}
+
 .add-photo{
     margin-top: 5px;
     display: inline-block;
@@ -84,7 +95,6 @@ body{
 }
 
 /* btns */
-
 .btn-custom-secondary{
     background-color: #F7F7F7;
 }
