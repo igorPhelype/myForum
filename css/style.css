@@ -6,6 +6,13 @@
 body{
     background-color: #F7F7F7;
 }
+a{
+    color: #8D33CC;
+}
+a:hover{
+    text-decoration: underline;
+    color: #6A2699;
+}
 a, .clickable{
     cursor: pointer;
 }
@@ -20,6 +27,18 @@ textarea, input{
 }
 .signup-form button{
     margin-top: 20px;
+}
+
+/* nav */
+nav .current{
+    color: #8D33CC;
+}
+nav a{
+    color: black;
+}
+nav .nav-link:hover{
+    color: #8D33CC;
+    text-decoration: underline;
 }
 
 /* signup */
@@ -113,7 +132,7 @@ form label{
 .user-avatar{
     display: block;
     margin: 0 auto;
-    width: 120px;
+    width: 100px;
     border: .1em solid lightgray;
 }
 
@@ -121,6 +140,17 @@ form label{
 .btn-custom-primary{
     color: white;
     background-color: #8D33CC;
+}
+
+/* profile */
+.profile .profile-avatar{
+    margin-bottom: 15px;
+}
+.profile h5 {
+    font-size: 1.1em;
+}
+.profile p {
+    font-size: .9em;    
 }
 
 /* post */
@@ -162,4 +192,13 @@ nav{
 }
 nav .navbar-brand{
     color: white;
+}
+
+/* profile bagdes */
+.badges .number{
+    font-size: 1.2em;
+}
+.badges span{
+    color: gray;
+    font-size: 0.9em;
 }
