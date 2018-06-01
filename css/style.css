@@ -1,48 +1,55 @@
-/* my custom css */
-
+/* general */
 *{
+    font-family: 'Roboto', sans-serif;
     cursor: default;
-}
-.clickabe{
-    cursor: pointer;
-}
-input{
-    cursor: text;
-}
-.dashboard-post-icon{
-    margin: 6px;
-    color: gray;
-}
-.post-actions{
-    margin-top: 10px;
-    margin-bottom: 10px;
 }
 body{
     background-color: #F7F7F7;
 }
-
-.short-text-link{
-    color: black;
-    font-weight: bold;
+a, .clickable{
+    cursor: pointer;
+}
+textarea, input{
+    cursor: text;
+}
+.form-check input{
+    cursor: default;
+}
+.agreement-terms label{
+    font-weight: 400;
+}
+.signup-form button{
+    margin-top: 20px;
 }
 
+/* signup */
 textarea {
     resize: none;
 }
+.form-info {
+    font-style: italic;
+    font-size: .9em;
+    margin: 10px;
+    color: gray;
+}
+form label{
+    font-size: 1em;
+    font-weight: 500; 
+}
 
+/* flex tag */
 .tag-container{
     display: flex;
     flex-wrap: wrap;
     justify-content: flex-start;
 }
-
 .tag-item{
     margin: 5px;
 }
-
 .tag{
     display: flex;
-    padding: 2px;    
+    padding: 2px;  
+    font-size: .9em;  
     color: #67869c;
     background-color: #D8E8FF;
     border-color: transparent;
@@ -52,22 +59,18 @@ textarea {
     line-height: 1em;
     vertical-align: middle;
 }
-
 .tag:hover{
     background-color: rgb(206, 226, 240);
 }
-
 .action-tag{
     font-size: 1.1em;
     font-weight: 800;
     margin-left: 2px;
     cursor: pointer;
 }
-
 .add-tag:hover{
     color: rgb(90, 212, 60);
 }
-
 .remove-tag:hover{
     color: rgb(221, 51, 51);
 }
@@ -81,20 +84,11 @@ textarea {
     width: 120px;
     height: 120px;
 }
-
 .user-avatar-upload{
     width: 120px;
     margin: 0 auto;
     text-align: center;
 }
-
-.user-avatar{
-    display: block;
-    margin: 0 auto;
-    width: 150px;
-    border: 1px solid #F7F7F7;
-}
-
 .add-photo{
     margin-top: 5px;
     display: inline-block;
@@ -104,7 +98,6 @@ textarea {
     line-height: 1em;
     vertical-align: middle;
 }
-
 .upload-icon{
     color: gray;
     cursor: pointer;
@@ -113,18 +106,57 @@ textarea {
     height: 24px;
 }
 
-/* btns */
-.btn-custom-secondary{
-    background-color: #F7F7F7;
-}
-.btn-custom-primary{
-    color: white;
-    background-color: #FF921B;
+/* dashboard */
+.user-avatar{
+    display: block;
+    margin: 0 auto;
+    width: 120px;
+    border: .1em solid lightgray;
 }
 
-/* fonts */
+/* btns */
+.btn-custom-primary{
+    color: white;
+    background-color: #8D33CC;
+}
+
+/* post */
+.post{
+    margin-bottom: 10px;
+}
+.post p{
+    font-size: .9em;
+}
+.post h5{
+    font-size: 1.4em;
+}
+.post span{
+    font-size: .9em;
+}
 .post-date{
     font-style: italic;
     font-size: .8em;
     font-weight: 500;
+}
+.post-actions{
+    margin-top: 10px;
+    margin-bottom: 10px;
+}
+.dashboard-post-icon{
+    margin: 6px;
+    color: gray;
+}
+.short-text-link{
+    color: black;
+    margin-left: 2px;
+    text-decoration: underline;
+    font-weight: bold;
+}
+
+/* navbar */
+nav{
+    background: #8D33CC;
+}
+nav .navbar-brand{
+    color: white;
 }
