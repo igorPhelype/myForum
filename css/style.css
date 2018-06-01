@@ -202,3 +202,8 @@ nav .navbar-brand{
     color: gray;
     font-size: 0.9em;
 }
+
+/* user actions */
+.user-actions button{
+margin-bottom: 5px;
+}
