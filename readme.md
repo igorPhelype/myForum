@@ -1,9 +1,9 @@
 # Repositório do MyForum
 
 ## Resumo
-    MyForum é um projeto visual de prototipação de um fórum para programadores.
-    Plataforma aonde se discute sobre diversas linguagens de programação, frameworks e tecnologias.
-    Não só um fórum de perguntas e respostas, também são incluídos debates sobre novas atualizações de determinada linguagem, novos lançamentos, novos padrões de desenvolvimento e etc.
+MyForum é um projeto visual de prototipação de um fórum para programadores.
+Plataforma aonde se discute sobre diversas linguagens de programação, frameworks e tecnologias.
+Não só um fórum de perguntas e respostas, também são incluídos debates sobre novas atualizações de determinada linguagem, novos lançamentos, novos padrões de desenvolvimento e etc.
 
 ## Páginas criadas e informações
 - index.html (Contém formulário de cadastro)
