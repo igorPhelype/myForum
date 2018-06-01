@@ -99,11 +99,14 @@ form label{
     vertical-align: middle;
 }
 .upload-icon{
-    color: gray;
+    color: darkgray;
     cursor: pointer;
     margin-right: 5px;
     width: 24px;
     height: 24px;
+}
+.upload-icon:hover{
+    color: gray;
 }
 
 /* dashboard */
